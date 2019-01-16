@@ -40,6 +40,8 @@ public class Rail_fence_cipher {
     TextField decryptField = new TextField();
     HBox decryptBox = new HBox(decryptClear, decryptField);
 
+    //Error Label
+    Label errorLabel = new Label();
 
 
     //Run
@@ -69,7 +71,40 @@ public class Rail_fence_cipher {
         encodeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                int position = Integer.parseInt(numberTextPosition.getText());
+                int level = Integer.parseInt(numberTextLevel.getText());
 
+                String message= encryptField.getText();
+                if(message.equals(""))
+                {
+                    message = "Message can't be empty!";
+                    encryptField.setText(message);
+                }
+
+                Rail_algorithm rail_algorithm_2 = new Rail_algorithm(message,level,position);
+
+                if(position>level)
+                {
+                    errorLabel.setText("Position can't be higher than level!");
+                }
+                else if(position<1)
+                {
+                    errorLabel.setText("Position can't be lower than 1!");
+                }
+                else if(level<1)
+                {
+                    errorLabel.setText("Level can't be lower than 1!");
+                }
+                else if(level == 1)
+                {
+                    errorLabel.setText("");
+                    decryptField.setText(encryptField.getText());
+                }
+                else
+                {
+                    errorLabel.setText("");
+                    decryptField.setText(rail_algorithm_2.Cipher());
+                }
 
             }
         });
@@ -77,6 +112,40 @@ public class Rail_fence_cipher {
         decodeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                int position = Integer.parseInt(numberTextPosition.getText());
+                int level = Integer.parseInt(numberTextLevel.getText());
+                String message = encryptField.getText();
+
+                if(message.equals(""))
+                {
+                    message = "Message can't be empty!";
+                    decryptField.setText(message);
+                }
+
+                Rail_algorithm rail_algorithm_2 = new Rail_algorithm(message,level,position);
+
+                if(position>level)
+                {
+                    errorLabel.setText("Position can't be higher than level!");
+                }
+                else if(position<1)
+                {
+                    errorLabel.setText("Position can't be lower than 1!");
+                }
+                else if(level<1)
+                {
+                    errorLabel.setText("Level can't be lower than 1!");
+                }
+                else if(level == 1)
+                {
+                    errorLabel.setText("");
+                    encryptField.setText(decryptField.getText());
+                }
+                else
+                {
+                    errorLabel.setText("");
+                    encryptField.setText(rail_algorithm_2.Decipher(decryptField.getText()));
+                }
 
             }
         });
@@ -98,7 +167,7 @@ public class Rail_fence_cipher {
         });
 
 
-        mainVBox.getChildren().setAll(levelHBox, positionHBox, encryptBox, decryptBox, codeBox);
+        mainVBox.getChildren().setAll(levelHBox, positionHBox, encryptBox, decryptBox, codeBox, errorLabel);
         stage_1.setScene(mainScene);
     }
 }
