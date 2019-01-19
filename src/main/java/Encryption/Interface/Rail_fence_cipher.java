@@ -119,7 +119,7 @@ public class Rail_fence_cipher {
                 if(message.equals(""))
                 {
                     message = "Message can't be empty!";
-                    decryptField.setText(message);
+                    encryptField.setText(message);
                 }
 
                 Rail_algorithm rail_algorithm_2 = new Rail_algorithm(message,level,position);
