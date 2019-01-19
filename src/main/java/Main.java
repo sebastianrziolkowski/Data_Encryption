@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import main.java.Encryption.Interface.Baudot_code;
+import main.java.Encryption.Interface.Vigenere_cipher;
 import main.java.Encryption.Interface.Rail_fence_cipher;
 
 public class Main extends Application {
@@ -29,7 +29,7 @@ public class Main extends Application {
 
         //Buttons
         Button railButton = new Button("Rail fence cipher");
-        Button baudotButton = new Button("Baudot code");
+        Button baudotButton = new Button("Vigenere cipher");
         mainVBox.getChildren().addAll(descriptionLabel, railButton, baudotButton);
         railButton.setPrefSize(200, 35);
         baudotButton.setPrefSize(200, 35);
@@ -53,10 +53,10 @@ public class Main extends Application {
         baudotButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                Baudot_code baudot_code = new Baudot_code();
+              Vigenere_cipher vigenereCipher = new Vigenere_cipher();
 
-                primaryStage.setScene(baudot_code.mainScene);
-                primaryStage.setTitle("Data Encryption - Baudot_code");
+                primaryStage.setScene(vigenereCipher.mainScene);
+                primaryStage.setTitle("Data Encryption - Vigenere cipher");
 
 
             }
