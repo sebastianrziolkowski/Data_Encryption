@@ -147,19 +147,22 @@ public class Vigenere_algorithm {
         String result = "";
         cipherText = cipherText.toLowerCase();
         keyword = growToTextSize(cipherText.length(), keyword);
-        char newKey[] = new char[keyword.length()];
-
+        char[] newKey = new char[keyword.length()];
         tabulaRecta = transposeMatrix(tabulaRecta);
 
-        for(int i=0;i<keyword.length();i++)
-        {
-            newKey[i]= (char)((((26-(keyword.charAt(i)))%26)*(-1))+97);
+
+        for (int i = 0; i < cipherText.length(); i++) {
+            char toshow = keyword.charAt(i);
+            int row = keyword.charAt(i) - 'a';
+            newKey[i]= (char)(((26-(keyword.charAt(i)))%26));
+            int col = indexOf(tabulaRecta[row], cipherText.charAt(i));
+
+            result += tabulaRecta[0][col];
         }
 
-
-
-        return CipherOpposite(new String(newKey), cipherText);
+        return result;
     }
+
 
     public String CipherOpposite(String key, String textToDecipher) {
         String result = "";

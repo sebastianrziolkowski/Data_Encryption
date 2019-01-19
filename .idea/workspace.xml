@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Data_Encryption:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Encryption/main/java/Encryption/Interface/Baudot_code.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Encryption/main/java/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Data_Encryption/main/java/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encryption/Interface/Baudot_code.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Data_Encryption/main/java/Encryption/Vigenere_algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Data_Encryption/main/java/Encryption/Vigenere_algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encryption/Vigenere_algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encryption/Vigenere_algorithm.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,51 +69,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+            <state relative-caret-position="459">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Vigenere_algorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="191" column="5" lean-forward="true" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
-              <folding>
-                <element signature="class#MyCharStream#0;class#Vigenere_algorithm#0" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="method#shift#0;class#Vigenere_algorithm#0" />
-                <element signature="method#growToTextSize#0;class#Vigenere_algorithm#0" />
-                <element signature="method#transposeMatrix#0;class#Vigenere_algorithm#0" />
-                <element signature="method#indexOf#0;class#Vigenere_algorithm#0" />
-                <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-                <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-                <element signature="method#Decipher#0;class#Vigenere_algorithm#0" />
-                <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-                <element signature="method#Decipher#0;class#Vigenere_algorithm#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Vigenere_algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="231" column="27" lean-forward="true" selection-start-line="231" selection-start-column="27" selection-end-line="231" selection-end-column="27" />
+              <folding>
+                <element signature="class#MyCharStream#0;class#Vigenere_algorithm#0" />
+                <element signature="method#shift#0;class#Vigenere_algorithm#0" />
+                <element signature="method#growToTextSize#0;class#Vigenere_algorithm#0" />
+                <element signature="method#transposeMatrix#0;class#Vigenere_algorithm#0" />
+                <element signature="method#indexOf#0;class#Vigenere_algorithm#0" />
+                <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Interface/Vigenere_cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="226" column="80" selection-start-line="226" selection-start-column="80" selection-end-line="226" selection-end-column="80" />
+            <state relative-caret-position="261">
+              <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11553#11554#0" expanded="true" />
-                <element signature="e#11607#11608#0" expanded="true" />
-                <element signature="e#11766#11767#0" expanded="true" />
-                <element signature="e#11821#11822#0" expanded="true" />
-                <element signature="e#11979#11980#0" expanded="true" />
-                <element signature="e#12035#12036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,6 +235,9 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547859470416" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -361,7 +355,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14750378" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14977308" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,7 +364,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34860885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.09165303" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24222586" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -430,13 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Interface/Interface/Rail_fence_cipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Interface/Interface/Rail_fence_cipher.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Rail_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -505,8 +493,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state relative-caret-position="459">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Interface/Vigenere_cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -515,40 +513,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Vigenere_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="191" column="5" lean-forward="true" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
+        <state relative-caret-position="184">
+          <caret line="231" column="27" lean-forward="true" selection-start-line="231" selection-start-column="27" selection-end-line="231" selection-end-column="27" />
           <folding>
             <element signature="class#MyCharStream#0;class#Vigenere_algorithm#0" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
             <element signature="method#shift#0;class#Vigenere_algorithm#0" />
             <element signature="method#growToTextSize#0;class#Vigenere_algorithm#0" />
             <element signature="method#transposeMatrix#0;class#Vigenere_algorithm#0" />
             <element signature="method#indexOf#0;class#Vigenere_algorithm#0" />
             <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-            <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-            <element signature="method#Decipher#0;class#Vigenere_algorithm#0" />
-            <element signature="method#Cipher#0;class#Vigenere_algorithm#0" />
-            <element signature="method#Decipher#0;class#Vigenere_algorithm#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encryption/Interface/Vigenere_cipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="226" column="80" selection-start-line="226" selection-start-column="80" selection-end-line="226" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11553#11554#0" expanded="true" />
-            <element signature="e#11607#11608#0" expanded="true" />
-            <element signature="e#11766#11767#0" expanded="true" />
-            <element signature="e#11821#11822#0" expanded="true" />
-            <element signature="e#11979#11980#0" expanded="true" />
-            <element signature="e#12035#12036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Data_Encryption:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20804597" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>hamcrest-all-1.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Data_Encryption</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
